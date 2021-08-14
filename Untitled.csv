@@ -1,0 +1,13 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"USB1";"Molex-0548190589";1;"Molex-0548190589";;;
+2;"MX9,MX5,MX1,MX6,MX8,MX7,MX2,MX4,MX3";"MX-1.5U-NoLED";9;"MX-NoLED";;;
+3;"D9,D8,D7,D6,D5,D2,D4,D3,D1";"D_SOD-123";9;"D_Small";;;
+4;"Y1";"Crystal_SMD_3225-4Pin_3.2x2.5mm";1;"16MHz";;;
+5;"U1";"TQFP-44_10x10mm_P0.8mm";1;"ATmega32U4-AU";;;
+6;"SW1";"SKQG-1155865";1;"SW_Push";;;
+7;"R4,R3";"R_0805_2012Metric";2;"10k";;;
+8;"R2,R1";"R_0805_2012Metric";2;"22";;;
+9;"F1";"Fuse_1206_3216Metric";1;"Polyfuse_Small";;;
+10;"C7";"C_0805_2012Metric";1;"1uF";;;
+11;"C6,C5,C2,C1";"C_0805_2012Metric";4;"0.1uF";;;
+12;"C4,C3";"C_0805_2012Metric";2;"22pF";;;

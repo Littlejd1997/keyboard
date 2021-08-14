@@ -181,7 +181,7 @@ L Device:C_Small C6
 U 1 1 60CB0F6A
 P 1950 5850
 F 0 "C6" H 2042 5896 50  0000 L CNN
-F 1 "0.1uF" H 2042 5805 50  0000 L CNN
+F 1 "10uF" H 2042 5805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 1950 5850 50  0001 C CNN
 F 3 "~" H 1950 5850 50  0001 C CNN
 	1    1950 5850
@@ -257,12 +257,12 @@ Wire Wire Line
 $Comp
 L Device:C_Small C3
 U 1 1 60CC03DF
-P 1500 3300
-F 0 "C3" V 1271 3300 50  0000 C CNN
-F 1 "22pF" V 1362 3300 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1500 3300 50  0001 C CNN
-F 3 "~" H 1500 3300 50  0001 C CNN
-	1    1500 3300
+P 1500 3450
+F 0 "C3" V 1271 3450 50  0000 C CNN
+F 1 "22pF" V 1362 3450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1500 3450 50  0001 C CNN
+F 3 "~" H 1500 3450 50  0001 C CNN
+	1    1500 3450
 	0    1    1    0   
 $EndComp
 $Comp
@@ -290,7 +290,7 @@ $EndComp
 Wire Wire Line
 	1900 3750 1900 3650
 Wire Wire Line
-	1600 3300 1900 3300
+	1600 3450 1900 3450
 Wire Wire Line
 	1900 3300 1900 3450
 Wire Wire Line
@@ -315,7 +315,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 3850 1400 3850
 Wire Wire Line
-	1400 3300 1400 3750
+	1400 3450 1400 3750
 Wire Wire Line
 	1400 3750 1400 3850
 Connection ~ 1400 3750
@@ -353,8 +353,6 @@ Wire Wire Line
 	1750 3050 1900 3050
 Wire Wire Line
 	2300 3050 2300 3250
-Wire Wire Line
-	2300 3250 2350 3250
 $Comp
 L power:+5V #PWR0110
 U 1 1 60CD283D
@@ -577,14 +575,8 @@ Wire Wire Line
 Wire Wire Line
 	7500 4950 8200 4950
 Connection ~ 7500 4950
-Wire Wire Line
-	8150 5750 7500 5750
 Connection ~ 7500 5750
-Wire Wire Line
-	7850 4450 7850 5250
 Connection ~ 7850 4450
-Wire Wire Line
-	8550 4450 8550 5250
 Wire Wire Line
 	8550 5250 8500 5250
 Connection ~ 8550 4450
@@ -604,4 +596,262 @@ Text GLabel 8550 3700 1    50   Input ~ 0
 COL1
 Wire Wire Line
 	8550 3700 8550 4450
+Wire Wire Line
+	1400 3850 1400 3900
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX9
+U 1 1 60DB6342
+P 9100 4500
+F 0 "MX9" H 9133 4723 60  0000 C CNN
+F 1 "MX-NoLED" H 9133 4649 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1.5U-NoLED" H 8475 4475 60  0001 C CNN
+F 3 "" H 8475 4475 60  0001 C CNN
+	1    9100 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D9
+U 1 1 60DB6348
+P 8900 4850
+F 0 "D9" V 8946 4780 50  0000 R CNN
+F 1 "D_Small" V 8855 4780 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" V 8900 4850 50  0001 C CNN
+F 3 "~" V 8900 4850 50  0001 C CNN
+	1    8900 4850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9050 4650 8900 4650
+Wire Wire Line
+	8900 4650 8900 4750
+Wire Wire Line
+	8200 4950 8900 4950
+Connection ~ 9250 4450
+Wire Wire Line
+	9250 3700 9250 4450
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX7
+U 1 1 60DBB510
+P 9050 5300
+F 0 "MX7" H 9083 5523 60  0000 C CNN
+F 1 "MX-NoLED" H 9083 5449 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1.5U-NoLED" H 8425 5275 60  0001 C CNN
+F 3 "" H 8425 5275 60  0001 C CNN
+	1    9050 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D7
+U 1 1 60DBB516
+P 8850 5650
+F 0 "D7" V 8896 5580 50  0000 R CNN
+F 1 "D_Small" V 8805 5580 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" V 8850 5650 50  0001 C CNN
+F 3 "~" V 8850 5650 50  0001 C CNN
+	1    8850 5650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9000 5450 8850 5450
+Wire Wire Line
+	8850 5450 8850 5550
+Wire Wire Line
+	9250 5250 9200 5250
+Text GLabel 9250 3700 1    50   Input ~ 0
+COL2
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX5
+U 1 1 60DC61E6
+P 7700 6050
+F 0 "MX5" H 7733 6273 60  0000 C CNN
+F 1 "MX-NoLED" H 7733 6199 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1.5U-NoLED" H 7075 6025 60  0001 C CNN
+F 3 "" H 7075 6025 60  0001 C CNN
+	1    7700 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D5
+U 1 1 60DC61EC
+P 7500 6400
+F 0 "D5" V 7546 6330 50  0000 R CNN
+F 1 "D_Small" V 7455 6330 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" V 7500 6400 50  0001 C CNN
+F 3 "~" V 7500 6400 50  0001 C CNN
+	1    7500 6400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7650 6200 7500 6200
+Wire Wire Line
+	7500 6200 7500 6300
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX6
+U 1 1 60DC61F4
+P 8350 6050
+F 0 "MX6" H 8383 6273 60  0000 C CNN
+F 1 "MX-NoLED" H 8383 6199 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1.5U-NoLED" H 7725 6025 60  0001 C CNN
+F 3 "" H 7725 6025 60  0001 C CNN
+	1    8350 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D6
+U 1 1 60DC61FA
+P 8150 6400
+F 0 "D6" V 8196 6330 50  0000 R CNN
+F 1 "D_Small" V 8105 6330 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" V 8150 6400 50  0001 C CNN
+F 3 "~" V 8150 6400 50  0001 C CNN
+	1    8150 6400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8300 6200 8150 6200
+Wire Wire Line
+	8150 6200 8150 6300
+Wire Wire Line
+	8150 6500 7500 6500
+Connection ~ 7500 6500
+Wire Wire Line
+	8550 6000 8500 6000
+Wire Wire Line
+	6950 6500 7500 6500
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX8
+U 1 1 60DC6209
+P 9050 6050
+F 0 "MX8" H 9083 6273 60  0000 C CNN
+F 1 "MX-NoLED" H 9083 6199 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1.5U-NoLED" H 8425 6025 60  0001 C CNN
+F 3 "" H 8425 6025 60  0001 C CNN
+	1    9050 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D8
+U 1 1 60DC620F
+P 8850 6400
+F 0 "D8" V 8896 6330 50  0000 R CNN
+F 1 "D_Small" V 8805 6330 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" V 8850 6400 50  0001 C CNN
+F 3 "~" V 8850 6400 50  0001 C CNN
+	1    8850 6400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9000 6200 8850 6200
+Wire Wire Line
+	8850 6200 8850 6300
+Wire Wire Line
+	9250 6000 9200 6000
+Wire Wire Line
+	7850 4450 7850 5250
+Wire Wire Line
+	8550 4450 8550 5250
+Wire Wire Line
+	9250 4450 9250 5250
+Text GLabel 6950 6500 0    50   Input ~ 0
+ROW2
+Wire Wire Line
+	8150 6500 8850 6500
+Connection ~ 8150 6500
+Wire Wire Line
+	7500 5750 8150 5750
+Connection ~ 8150 5750
+Wire Wire Line
+	8150 5750 8850 5750
+Connection ~ 8550 5250
+Wire Wire Line
+	8550 5250 8550 6000
+Connection ~ 9250 5250
+Wire Wire Line
+	9250 5250 9250 6000
+Text GLabel 3650 5150 2    50   Input ~ 0
+COL1
+Wire Wire Line
+	3550 5050 3900 5050
+Text GLabel 3900 5050 2    50   Input ~ 0
+COL2
+Wire Wire Line
+	3550 5150 3650 5150
+Text GLabel 3650 3650 2    50   Input ~ 0
+COL0
+Wire Wire Line
+	3550 3650 3650 3650
+Text GLabel 3650 3750 2    50   Input ~ 0
+ROW0
+Wire Wire Line
+	3550 3750 3650 3750
+Text GLabel 3650 3850 2    50   Input ~ 0
+ROW1
+Wire Wire Line
+	3550 3850 3650 3850
+Text GLabel 3650 4150 2    50   Input ~ 0
+ROW2
+Wire Wire Line
+	3550 4150 3650 4150
+Wire Wire Line
+	7750 6000 7850 6000
+Connection ~ 7850 6000
+Wire Wire Line
+	7850 6200 7850 6000
+Wire Wire Line
+	7850 6000 7850 5250
+Connection ~ 7850 5250
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J1
+U 1 1 60FCE4E8
+P 4250 3550
+F 0 "J1" H 4300 3867 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 4300 3776 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 4250 3550 50  0001 C CNN
+F 3 "~" H 4250 3550 50  0001 C CNN
+	1    4250 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3550 3900 3550
+Wire Wire Line
+	3900 3550 3900 3450
+Wire Wire Line
+	3550 3450 3850 3450
+Wire Wire Line
+	3850 3450 3850 3150
+Wire Wire Line
+	3850 3150 4650 3150
+Wire Wire Line
+	4650 3150 4650 3550
+Wire Wire Line
+	4650 3550 4550 3550
+Wire Wire Line
+	4550 2950 4550 3450
+Connection ~ 3050 2950
+Wire Wire Line
+	3050 2950 4550 2950
+Wire Wire Line
+	3150 3250 3150 4050
+Wire Wire Line
+	3150 4050 4050 4050
+Wire Wire Line
+	4050 4050 4050 3650
+Wire Wire Line
+	2300 3250 2350 3250
+Connection ~ 2350 3250
+Wire Wire Line
+	2350 3250 3150 3250
+Wire Wire Line
+	3900 3450 4050 3450
+Wire Wire Line
+	3550 3350 4000 3350
+Wire Wire Line
+	4000 3350 4000 3550
+Wire Wire Line
+	4000 3550 4050 3550
+Wire Wire Line
+	4550 3650 4550 5350
+Wire Wire Line
+	4550 5350 4300 5350
+Connection ~ 4300 5350
 $EndSCHEMATC
